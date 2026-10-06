@@ -15,4 +15,6 @@ def test_session_rating_boundary_90_is_great():
 # of 59) or the exact boundary for "Good" (a score of 80).
 def test_session_rating_boundary_59_is_skip():
     assert session_rating(59) == "Skip"
-    
+
+def test_session_rating_boundary_80_is_good():
+    assert session_rating(80) == "Good"
